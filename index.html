@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>阿姨帮</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="ctrl">
+	<div class="container" id="container">
+		<div class="content"  ui-view="" ></div>
+	</div>
+	<div class="footer">
+		<a ui-sref="home" ui-sref-active="check"><span></span>首页</a>
+		<a ui-sref="order" ui-sref-active="check"><span></span>订单</a>
+		<a ui-sref="member" ui-sref-active="check"><span></span>会员</a>
+		<a ui-sref="mine" ui-sref-active="check"><span></span>我的</a>
+	</div>
+	<script src="lib/jquery.js"></script>	
+	<script src="lib/swiper.js"></script>
+	<script src="lib/iscroll.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/angular-swiper.js"></script>
+
+	<script src="js/index.js"></script>
+</body>
